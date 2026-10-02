@@ -1,0 +1,37 @@
+@ProductApiLab_HostAddress = http://localhost:5166
+
+GET {{ProductApiLab_HostAddress}}/api/products
+Accept: application/json
+
+###
+
+GET {{ProductApiLab_HostAddress}}/api/products/1
+Accept: application/json
+
+###
+
+POST {{ProductApiLab_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Ноутбук",
+  "price": 350000
+}
+
+###
+
+PUT {{ProductApiLab_HostAddress}}/api/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Ноутбук Pro",
+  "price": 420000
+}
+
+###
+
+DELETE {{ProductApiLab_HostAddress}}/api/products/1
+Accept: application/json
+
+###
